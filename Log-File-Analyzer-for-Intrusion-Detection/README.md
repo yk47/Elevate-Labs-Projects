@@ -27,12 +27,28 @@ Goal: build a CLI Python tool that ingests Apache and SSH logs, finds suspicious
 
 **🗂️File structure:**
 ```bash
-Project---Log-File-Analyzer-for-Intrusion-Detection/
-├─ log_analyzer.py         # main script (provided)
-├─ requirements.txt
-├─ README.md               # (provided)
-├─ sample_logs/            # optional: place sample apache/auth logs
-└─ blacklist.txt           # optional: IPs to cross-reference (one per line)
+└── Log-File-Analyzer-for-Intrusion-Detection
+    ├── README.md
+    ├── blacklist.txt
+    ├── log_analyzer.py
+    ├── output
+        ├── alerts.log
+        ├── incidents.csv
+        ├── incidents.json
+        ├── requests_per_minute.png
+        └── top_ips.png
+    ├── requirements.txt
+    ├── sample_logs
+        ├── apache.log
+        └── auth.log
+    └── screenshots
+        ├── create&activate_virtual_environment.png
+        ├── install_requirements.png
+        ├── log_analyzer_code.png
+        ├── output_files.png
+        ├── requirments_blacklist.png
+        ├── run_log_analyzer.png
+        └── sample_logs.png
 ```
 
 **Detection approach notes:**
