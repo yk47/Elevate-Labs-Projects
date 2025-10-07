@@ -27,7 +27,7 @@ Goal: build a CLI Python tool that ingests Apache and SSH logs, finds suspicious
 
 **🗂️File structure:**
 ```bash
-log-analyzer/
+Project---Log-File-Analyzer-for-Intrusion-Detection/
 ├─ log_analyzer.py         # main script (provided)
 ├─ requirements.txt
 ├─ README.md               # (provided)
