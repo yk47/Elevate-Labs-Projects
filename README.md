@@ -395,11 +395,11 @@ if __name__ == "__main__":
     main()
 ```
 
-## Log File Analyzer for Intrusion Detection
+## 🔎 Log File Analyzer for Intrusion Detection
 
-### Overview This tool parses Apache access logs and OpenSSH auth logs, detects suspicious activity (SSH/web brute-force, scanning, DoS/high-rate), cross-references IPs with a user-provided blacklist, and exports incident reports and basic visualizations. 
-### Requirements - Python 3.8+ - See `requirements.txt` for Python packages. 
-### Installation 
+### 🧐 Overview This tool parses Apache access logs and OpenSSH auth logs, detects suspicious activity (SSH/web brute-force, scanning, DoS/high-rate), cross-references IPs with a user-provided blacklist, and exports incident reports and basic visualizations. 
+### ✔ Requirements - Python 3.8+ - See `requirements.txt` for Python packages. 
+### 🔧 Installation 
 **1. Create a virtualenv:**
 ```bash
 python3 -m venv venv
@@ -422,7 +422,7 @@ pip install -r requirements.txt
 python log_analyzer.py --apache /path/to/access.log --ssh /path/to/auth.log --blacklist blacklist.txt --outdir output
 ```
 
-### Key CLI options:
+### ꄗ Key CLI options:
 
 - ```--ssh-fails-threshold``` (default 10)
 - ```--ssh-window-minutes``` (default 10)
@@ -431,21 +431,21 @@ python log_analyzer.py --apache /path/to/access.log --ssh /path/to/auth.log --bl
 - ```--no-plots``` skip generating images
 
 
-### Outputs (in ```--outdir```, default ```output```)
+### ╰┈➤ Outputs (in ```--outdir```, default ```output```)
 
 - ```incidents.csv``` — table of detected incidents
 - ```incidents.json``` — structured incidents
 - ```alerts.log``` — quick human-readable alerts
 - ```top_ips.png```, ```requests_per_minute.png``` — visualizations
 
-### Detection logic (summary
+### 🕵🏻 Detection logic (summary
 
 - SSH brute-force: X failed auths from same IP within Y minutes.
 - Web brute-force: Too many HTTP 401/403 from an IP within window.
 - Scanning: Many distinct URLs requested by IP or many 404s.
 - DoS: >R requests in a single minute from same IP.
 
-### Next steps / Enhancements
+### ➡️ Next steps / Enhancements
 
 - Integrate GeoIP to add country/org context to incidents.
 - Query public blocklists (AbuseIPDB, IPVoid) via their APIs to automate blacklist checks.
@@ -453,7 +453,7 @@ python log_analyzer.py --apache /path/to/access.log --ssh /path/to/auth.log --bl
 - Store events in SQLite / Elastic / SIEM for long-term analysis.
 - Add unit tests and benchmark on big logs (use chunked parsing).
 
-### Notes & Caveats
+### 📌 Notes & Caveats
 
 - Parsing uses regex; formats must match expected samples.
 - For very large logs, consider streaming parsing or tooling like Apache Spark / Dask.
