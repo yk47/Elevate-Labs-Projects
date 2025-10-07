@@ -1,0 +1,7 @@
+type,ip,start,end,count,desc,blacklisted
+ssh_bruteforce,103.99.0.122,2025-12-10T09:11:21,2025-12-10T09:11:50,10,10 failed SSH auths within 10 min,False
+ssh_bruteforce,112.95.230.3,2025-12-10T07:27:52,2025-12-10T07:28:14,10,10 failed SSH auths within 10 min,False
+ssh_bruteforce,183.62.140.253,2025-12-10T10:54:29,2025-12-10T10:54:47,10,10 failed SSH auths within 10 min,False
+ssh_bruteforce,185.190.58.151,2025-12-10T09:07:58,2025-12-10T09:11:03,10,10 failed SSH auths within 10 min,False
+ssh_bruteforce,187.141.143.180,2025-12-10T09:12:48,2025-12-10T09:13:38,10,10 failed SSH auths within 10 min,False
+ssh_bruteforce,5.188.10.180,2025-12-10T08:24:45,2025-12-10T08:25:35,10,10 failed SSH auths within 10 min,False

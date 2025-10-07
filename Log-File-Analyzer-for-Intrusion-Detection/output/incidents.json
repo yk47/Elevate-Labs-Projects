@@ -1,0 +1,56 @@
+[
+  {
+    "type": "ssh_bruteforce",
+    "ip": "103.99.0.122",
+    "start": "2025-12-10T09:11:21",
+    "end": "2025-12-10T09:11:50",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  },
+  {
+    "type": "ssh_bruteforce",
+    "ip": "112.95.230.3",
+    "start": "2025-12-10T07:27:52",
+    "end": "2025-12-10T07:28:14",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  },
+  {
+    "type": "ssh_bruteforce",
+    "ip": "183.62.140.253",
+    "start": "2025-12-10T10:54:29",
+    "end": "2025-12-10T10:54:47",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  },
+  {
+    "type": "ssh_bruteforce",
+    "ip": "185.190.58.151",
+    "start": "2025-12-10T09:07:58",
+    "end": "2025-12-10T09:11:03",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  },
+  {
+    "type": "ssh_bruteforce",
+    "ip": "187.141.143.180",
+    "start": "2025-12-10T09:12:48",
+    "end": "2025-12-10T09:13:38",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  },
+  {
+    "type": "ssh_bruteforce",
+    "ip": "5.188.10.180",
+    "start": "2025-12-10T08:24:45",
+    "end": "2025-12-10T08:25:35",
+    "count": 10,
+    "desc": "10 failed SSH auths within 10 min",
+    "blacklisted": false
+  }
+]
