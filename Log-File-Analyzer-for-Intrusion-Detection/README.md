@@ -56,7 +56,7 @@ Goal: build a CLI Python tool that ingests Apache and SSH logs, finds suspicious
 - Use regex to parse logs into structured rows; convert to pandas DataFrame for aggregation and detection.
 - For performance on very large logs: process incrementally / chunking or use Dask; but initial version operates on logs that fit in memory.
 
-Now — code and docs below.
+**💻Now — code and docs below.**
 ```bash
 ```python
 #!/usr/bin/env python3
