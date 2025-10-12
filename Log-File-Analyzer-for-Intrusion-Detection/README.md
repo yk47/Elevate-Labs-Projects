@@ -28,6 +28,7 @@ Goal: build a CLI Python tool that ingests Apache and SSH logs, finds suspicious
 **🗂️File structure:**
 ```bash
 └── Log-File-Analyzer-for-Intrusion-Detection
+    ├── Log_File_Analyzer_Report_Yash_Karnik.pdf
     ├── README.md
     ├── blacklist.txt
     ├── log_analyzer.py
@@ -422,10 +423,15 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+<img width="1920" height="1051" alt="create activate_virtual_environment" src="https://github.com/user-attachments/assets/5926fcaf-3c5d-4ae7-9948-9c863bd75ac9" />
+<img width="1920" height="1051" alt="install_requirements" src="https://github.com/user-attachments/assets/0b7fef7c-006c-4671-93bc-3fd8e1b72468" />
+<img width="992" height="734" alt="requirments_blacklist" src="https://github.com/user-attachments/assets/1772ef59-1b45-49f0-a1ca-c9a3ca418de2" />
 
 **2.Place your logs:**
 - Apache access log (Combined format) e.g. ```access.log```
 - SSH auth log e.g. ```/var/log/auth.log``` (you may need root access to read)
+<img width="1920" height="1051" alt="sample_logs" src="https://github.com/user-attachments/assets/ce5614f8-9bb3-44c5-b5c4-cdb179cf7d90" />
+
 
 **3.Optional:** 
 
@@ -437,6 +443,8 @@ pip install -r requirements.txt
 ```bash
 python log_analyzer.py --apache /path/to/access.log --ssh /path/to/auth.log --blacklist blacklist.txt --outdir output
 ```
+<img width="1920" height="1051" alt="run_log_analyzer" src="https://github.com/user-attachments/assets/b01f88d2-e184-4cd2-ade2-4da983c32cd3" />
+
 
 ### ꄗ Key CLI options:
 
@@ -453,6 +461,11 @@ python log_analyzer.py --apache /path/to/access.log --ssh /path/to/auth.log --bl
 - ```incidents.json``` — structured incidents
 - ```alerts.log``` — quick human-readable alerts
 - ```top_ips.png```, ```requests_per_minute.png``` — visualizations
+  
+<img width="1012" height="672" alt="output_files" src="https://github.com/user-attachments/assets/59cf34a4-fe55-40d1-99b2-1dc3dec4316f" />
+<img width="640" height="480" alt="requests_per_minute" src="https://github.com/user-attachments/assets/2cd0f182-d650-4a13-9e61-74e593be3d94" />
+<img width="640" height="480" alt="top_ips" src="https://github.com/user-attachments/assets/2e3d3a18-b011-473c-8e34-0a718d223cff" />
+
 
 ### 🕵🏻 Detection logic (summary
 
